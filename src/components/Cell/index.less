@@ -1,0 +1,30 @@
+@import "../../theme/index.less";
+.cell-default {
+  width: 100%;
+  font-size: @font-size;
+  display: flex;
+  align-items: center;
+  background: @white;
+  border-bottom: 1px solid @gray;
+  font-weight: 400;
+  padding: 0 5px;
+  .cell-title {
+    display: block;
+    height: @cell-height;
+    flex-shrink: 1;
+    min-width: 80px;
+    line-height: @cell-height;
+  }
+  .cell-container {
+    flex-grow: 1;
+
+    height: @cell-height;
+  }
+  .nav-link-icon {
+    height: 100%;
+    a {
+      display: block;
+      padding: 5px;
+    }
+  }
+}

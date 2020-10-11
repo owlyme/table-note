@@ -1,0 +1,60 @@
+@import "../../theme/index.less";
+.select-default {
+  border-color: none;
+  border: none;
+  background: @white;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  select {
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  .selected-item {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: @cell-height;
+    font-size: @font-size;
+  }
+}
+
+.select-ui-container {
+  width: 100%;
+  position: relative;
+  display: none;
+  &.visible {
+    display: block;
+  }
+  &.hidden {
+    display: none;
+  }
+  .select-ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: @white;
+    width: 100%;
+    z-index: 500;
+    border: 1px solid @gray;
+    padding: 0 5px;
+    .border-radius();
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    .selected-ui-item {
+      width: 100%;
+      line-height: @cell-height;
+      font-size: @font-size;
+    }
+    .selected-ui-item + .selected-ui-item {
+      border-top: 1px solid @gray;
+    }
+  }
+}

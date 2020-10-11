@@ -1,0 +1,41 @@
+@import "../../theme/index.less";
+
+.radio-list {
+  border-color: none;
+  border: none;
+  background: @white;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  input {
+    visibility: hidden;
+    display: none;
+    width: 0;
+  }
+  .shape-round {
+    width: @shape-size;
+    height: @shape-size;
+    border-radius: 50%;
+    background: @white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid @gray;
+    vertical-align: middle;
+    .animate();
+    &.checked {
+      background: @blue;
+    }
+    &.disabled {
+      .disabled();
+    }
+    .shape-round-point {
+      width: @shape-size / 2.5;
+      height: @shape-size / 2.5;
+      border-radius: 50%;
+      background: @white;
+    }
+  }
+}

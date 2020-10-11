@@ -1,0 +1,60 @@
+@import "../../theme/index.less";
+
+.card {
+  // height: 120px;
+  padding: 20px 15px;
+  margin: 10px 5px;
+  background: #ffffff;
+  border: 1px solid @gray;
+  box-shadow: 1px 6px 8px @gray;
+  border-radius: 5px;
+  &:first-child {
+    margin-top: 0;
+  }
+  .time {
+    color: #615a5a;
+    font-size: 18px;
+  }
+  .body {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &.order-body {
+      align-items: center;
+    }
+    .order-type,
+    .order-price {
+      flex-shrink: 0;
+    }
+    .pic {
+    }
+    .container {
+      flex: auto;
+      margin-left: 10px;
+    }
+    .info {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .desc {
+      font-size: 14px;
+      color: #000;
+    }
+    .money {
+      text-align: right;
+    }
+    &.good-body {
+      padding-top: 0px;
+      padding-top: 0px;
+    }
+  }
+  .statistcs-time {
+    font-size: 24px;
+  }
+  .total-input,
+  .total-output,
+  .total-profit {
+    font-size: 14px;
+  }
+}

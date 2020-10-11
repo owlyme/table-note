@@ -1,0 +1,44 @@
+@import "../../theme/index.less";
+.checkbox-list {
+  border-color: none;
+  border: none;
+  background: white;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  input {
+    visibility: hidden;
+    display: none;
+    width: 0;
+  }
+  .shape-round {
+    position: relative;
+    width: @shape-size;
+    height: @shape-size;
+    background: @white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    border: 1px solid @gray;
+    border-radius: @border-size;
+    .animate();
+    &.checked {
+      background: @blue;
+      border: 0px solid none;
+    }
+    &.disabled {
+      .disabled();
+    }
+    .shape-round-point {
+      border: 2px solid @white;
+      border-top-color: none;
+      border-left-color: none;
+      width: @shape-size / 3;
+      height: @shape-size / 2;
+      transform: rotate(45deg);
+    }
+  }
+}

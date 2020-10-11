@@ -1,0 +1,30 @@
+@blue: #50bfff;
+@green: #13ce66;
+@red: #ff4949;
+@yellow: #f7ba2a;
+@white: #ffffff;
+@black: #333333;
+@gray: #ebedf0;
+
+@cell-height: 40px;
+
+@font-size: 16px;
+
+@shape-size: 24px;
+
+@border-size: 3px;
+
+.disabled() {
+  background-color: #f5f7fa;
+  border-color: #e4e7ed;
+  cursor: not-allowed;
+}
+.animate() {
+  transition: all 0.3;
+  -moz-transition: all 0.3; /* Firefox 4 */
+  -webkit-transition: all 0.3; /* Safari and Chrome */
+  -o-transition: all 0.3; /* Opera */
+}
+.border-radius() {
+  border-radius: @border-size;
+}

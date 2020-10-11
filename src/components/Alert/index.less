@@ -1,0 +1,40 @@
+@import "../../theme/index.less";
+
+.xalert-container {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 40px;
+  top: 40px;
+  left: 0;
+  color: #ffffff;
+
+  ul {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+  }
+  .xalert-default {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    .border-radius();
+    .animate();
+  }
+  .xalert-info {
+    background: @blue;
+  }
+  .xalert-success {
+    background: @green;
+  }
+  .xalert-warnning {
+    background: @yellow;
+  }
+  .xalert-error {
+    background: @red;
+  }
+}
