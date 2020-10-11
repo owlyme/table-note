@@ -1,6 +1,6 @@
-import { $get, $post } from "../../utils/_axios";
-import { sleep } from "../../utils/util";
-import localStorage from "../../utils/localStorage";
+import { $get, $post } from "../utils/_axios";
+import { sleep } from "../utils/util";
+import localStorage from "../utils/localStorage";
 import PATH from "./path";
 const setGoodsListToStorage = (params) => {
   localStorage.setLocalStorage("goodList", (pre) => {

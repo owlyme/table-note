@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./index.less";
 
-import { modalHelper } from "../../../utils/util";
+import { modalHelper } from "../../utils/util";
 let modal = null;
 const Select = ({
   show,

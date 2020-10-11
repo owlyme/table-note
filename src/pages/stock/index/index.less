@@ -1,0 +1,29 @@
+@import "../../theme/index.less";
+
+.login-form {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: @gray;
+  opacity: 0.9;
+  .form-container {
+    width: 98vw;
+    background: #fafafa;
+    .border-radius();
+  }
+  .btns {
+    margin-top: 20px;
+    button {
+      margin-bottom: 10px;
+    }
+    .forgot-pw {
+      margin-top: 20px;
+      height: 34px;
+      line-height: 1;
+      font-size: 14px;
+      text-align: right;
+      color: @blue;
+    }
+  }
+}

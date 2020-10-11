@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 
-class Login extends Component {
+class MemberDetail extends Component {
   render() {
     return (
       <div>
-        Login
+        MemberDetail Detail
       </div>
     )
   }
 }
 
-export default Login;
+export default MemberDetail;
 
 
